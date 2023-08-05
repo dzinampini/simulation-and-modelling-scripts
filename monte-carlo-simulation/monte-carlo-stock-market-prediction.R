@@ -13,4 +13,4 @@ generate.path <- function(){
 }
 mc.closing<-replicate(runs,generate.path())
 upper_quartile<-quantile(mc.closing,0.95)
-quantile(mc.closing,0.05)
+lower_quartile<-quantile(mc.closing,0.05)
